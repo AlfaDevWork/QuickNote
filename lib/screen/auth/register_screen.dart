@@ -31,6 +31,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CustomFormTextField(
+                  
                   keyboardType: TextInputType.emailAddress,
                   controller: emailController,
                   label: 'Email',

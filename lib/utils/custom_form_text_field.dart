@@ -29,6 +29,7 @@ class CustomFormTextField extends StatelessWidget {
         children: [
           SizedBox(height: 5),
           TextFormField(
+            autovalidateMode: AutovalidateMode.onUnfocus,
             controller: controller,
             obscureText: obscureText,
             validator: validator,
