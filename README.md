@@ -4,10 +4,9 @@ A simple note-taking application built with Flutter.
 
 ## Features
 
-* **User Authentication**: Users can register and log in to the application.
-* **Note CRUD**: Create, read, update, and delete notes.
-* **Search**: Search for notes by title or content.
-* **Minimalist Design**: A clean and easy-to-use interface.
+  * **Note CRUD**: Create, read, update, and delete notes.
+  * **Search**: Search for notes by title or content.
+  * **Minimalist Design**: A clean and easy-to-use interface.
 
 ## Getting Started
 
@@ -21,7 +20,7 @@ Ensure you have the Flutter SDK installed in your development environment. For i
 
 1.  **Clone the Repository**
     ```sh
-    git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
+    git clone https://github.com/your-username/your-repository-name.git
     ```
 2.  **Navigate to the Project Directory**
     ```sh
@@ -38,19 +37,19 @@ Ensure you have the Flutter SDK installed in your development environment. For i
 
 ## Usage
 
-Once the application is running, you will be greeted with a landing page where you can choose to log in or register. After successfully logging in, you will be directed to the main screen where you can manage your notes.
+Once the application is running, you will be directed to the main screen where you can manage your notes.
 
 ## Dependencies
 
 This project uses several third-party libraries:
 
-* [`cupertino_icons`](https://pub.dev/packages/cupertino_icons)
-* [`flutter_localization`](https://pub.dev/packages/flutter_localization)
-* [`google_fonts`](https://pub.dev/packages/google_fonts)
-* [`intl`](https://pub.dev/packages/intl)
-* [`path_provider`](https://pub.dev/packages/path_provider)
-* [`shared_preferences`](https://pub.dev/packages/shared_preferences)
-* [`sqflite`](https://pub.dev/packages/sqflite)
+  * [`cupertino_icons`](https://www.google.com/search?q=%5Bhttps://pub.dev/packages/cupertino_icons%5D\(https://pub.dev/packages/cupertino_icons\))
+  * [`flutter_localization`](https://www.google.com/search?q=%5Bhttps://pub.dev/packages/flutter_localization%5D\(https://pub.dev/packages/flutter_localization\))
+  * [`google_fonts`](https://www.google.com/search?q=%5Bhttps://pub.dev/packages/google_fonts%5D\(https://pub.dev/packages/google_fonts\))
+  * [`intl`](https://www.google.com/search?q=%5Bhttps://pub.dev/packages/intl%5D\(https://pub.dev/packages/intl\))
+  * [`path_provider`](https://www.google.com/search?q=%5Bhttps://pub.dev/packages/path_provider%5D\(https://pub.dev/packages/path_provider\))
+  * [`shared_preferences`](https://www.google.com/search?q=%5Bhttps://pub.dev/packages/shared_preferences%5D\(https://pub.dev/packages/shared_preferences\))
+  * [`sqflite`](https://www.google.com/search?q=%5Bhttps://pub.dev/packages/sqflite%5D\(https://pub.dev/packages/sqflite\))
 
 For more information, please see the `pubspec.yaml` file.
 
