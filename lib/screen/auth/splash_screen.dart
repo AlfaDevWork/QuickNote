@@ -1,6 +1,6 @@
 import 'package:Notes/helper/preference.dart';
-import 'package:Notes/screen/home.dart';
 import 'package:Notes/screen/auth/landing_screen.dart';
+import 'package:Notes/screen/home.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -40,14 +40,13 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: Colors.white,
       body: Center(
         child: Column(
           children: [
             Spacer(),
-            Text(
-              'WELCOME',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-            ),
+            // Image.asset('assets/images/Logo.png'),
+            Image(image: AssetImage('assets/images/Logo.png')),
             Spacer(),
             SafeArea(child: Text('V 1.0.0', style: TextStyle(fontSize: 10))),
           ],

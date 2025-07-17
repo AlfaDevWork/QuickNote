@@ -31,25 +31,26 @@ class _DetailNotesScreenState extends State<DetailNotesScreen> {
               onPressed: () async {
                 final konfirmasi = await showDialog<bool>(
                   context: context,
-                  builder: (_) => AlertDialog(
-                    title: Text('Delete note?'),
-                    actions: [
-                      TextButton(
-                        onPressed: () => Navigator.pop(context, false),
-                        child: Text(
-                          'Cancel',
-                          style: TextStyle(color: Colors.black),
-                        ),
+                  builder:
+                      (_) => AlertDialog(
+                        title: Text('Delete note?'),
+                        actions: [
+                          TextButton(
+                            onPressed: () => Navigator.pop(context, false),
+                            child: Text(
+                              'Cancel',
+                              style: TextStyle(color: Colors.black),
+                            ),
+                          ),
+                          TextButton(
+                            onPressed: () => Navigator.pop(context, true),
+                            child: Text(
+                              'Delete',
+                              style: TextStyle(color: Colors.red),
+                            ),
+                          ),
+                        ],
                       ),
-                      TextButton(
-                        onPressed: () => Navigator.pop(context, true),
-                        child: Text(
-                          'Delete',
-                          style: TextStyle(color: Colors.red),
-                        ),
-                      ),
-                    ],
-                  ),
                 );
                 if (konfirmasi == true) {
                   await DbHelper.deleteNotes(widget.notes.id!);
@@ -73,7 +74,7 @@ class _DetailNotesScreenState extends State<DetailNotesScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadiusGeometry.all(Radius.circular(48)),
+          borderRadius: BorderRadius.all(Radius.circular(48)),
         ),
         backgroundColor: Color(0xffC4C4C4),
         onPressed: () async {

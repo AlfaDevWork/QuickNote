@@ -1,7 +1,5 @@
 import 'package:Notes/database/db_helper.dart';
-import 'package:Notes/helper/preference.dart';
 import 'package:Notes/model/notes_model.dart';
-import 'package:Notes/screen/auth/landing_screen.dart';
 import 'package:Notes/screen/info_aplikasi.dart';
 import 'package:Notes/screen/notes.dart';
 import 'package:flutter/material.dart';
@@ -86,43 +84,43 @@ class _HomeScreenState extends State<HomeScreen> {
                 });
               },
             ),
-            ListTile(
-              leading: Icon(Icons.exit_to_app),
-              title: Text('Logout', style: TextStyle()),
-              onTap: () async {
-                final konfirmasi = await showDialog<bool>(
-                  context: context,
-                  builder: (_) => AlertDialog(
-                    title: Text('Are you sure you want to logout?'),
-                    actions: [
-                      TextButton(
-                        onPressed: () => Navigator.pop(context, false),
-                        child: Text(
-                          "Cancel",
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ),
-                      TextButton(
-                        onPressed: () => Navigator.pop(context, true),
-                        child: Text(
-                          'Logout',
-                          style: TextStyle(color: Colors.red),
-                        ),
-                      ),
-                    ],
-                  ),
-                );
+            // ListTile(
+            //   leading: Icon(Icons.exit_to_app),
+            //   title: Text('Logout', style: TextStyle()),
+            //   onTap: () async {
+            //     final konfirmasi = await showDialog<bool>(
+            //       context: context,
+            //       builder: (_) => AlertDialog(
+            //         title: Text('Are you sure you want to logout?'),
+            //         actions: [
+            //           TextButton(
+            //             onPressed: () => Navigator.pop(context, false),
+            //             child: Text(
+            //               "Cancel",
+            //               style: TextStyle(color: Colors.black),
+            //             ),
+            //           ),
+            //           TextButton(
+            //             onPressed: () => Navigator.pop(context, true),
+            //             child: Text(
+            //               'Logout',
+            //               style: TextStyle(color: Colors.red),
+            //             ),
+            //           ),
+            //         ],
+            //       ),
+            //     );
 
-                if (konfirmasi == true) {
-                  await PreferenceHandler.deleteLogin();
-                  Navigator.pushAndRemoveUntil(
-                    context,
-                    MaterialPageRoute(builder: (_) => LandingScreen()),
-                    (route) => false,
-                  );
-                }
-              },
-            ),
+            //     if (konfirmasi == true) {
+            //       await PreferenceHandler.deleteLogin();
+            //       Navigator.pushAndRemoveUntil(
+            //         context,
+            //         MaterialPageRoute(builder: (_) => LandingScreen()),
+            //         (route) => false,
+            //       );
+            //     }
+            //   },
+            // ),
             Divider(),
           ],
         ),

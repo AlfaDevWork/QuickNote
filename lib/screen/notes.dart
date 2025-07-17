@@ -168,7 +168,7 @@ class _NotesScreenState extends State<NotesScreen> {
         ),
         floatingActionButton: FloatingActionButton(
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadiusGeometry.all(Radius.circular(48)),
+            borderRadius: BorderRadius.all(Radius.circular(48)),
           ),
           backgroundColor: Color(0xffC4C4C4),
           onPressed: () async {

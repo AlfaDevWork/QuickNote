@@ -1,8 +1,4 @@
 import 'package:Notes/screen/home.dart';
-import 'package:Notes/screen/auth/landing_screen.dart';
-import 'package:Notes/screen/auth/login_screen.dart';
-import 'package:Notes/screen/auth/register_screen.dart';
-import 'package:Notes/screen/auth/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,14 +12,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/',
-      routes: {
-        '/': (context) => const SplashScreen(),
-        LandingScreen.id: (context) => LandingScreen(),
-        LoginScreen.id: (context) => LoginScreen(),
-        RegisterScreen.id: (context) => RegisterScreen(),
-        HomeScreen.id: (context) => HomeScreen(),
-      },
+      // initialRoute: '/',
+      // routes: {
+      //   '/': (context) => const SplashScreen(),
+      //   LandingScreen.id: (context) => LandingScreen(),
+      //   LoginScreen.id: (context) => LoginScreen(),
+      //   RegisterScreen.id: (context) => RegisterScreen(),
+      //   HomeScreen.id: (context) => HomeScreen(),
+      // },
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -47,7 +43,7 @@ class MyApp extends StatelessWidget {
           // brightness: Brightness.light,
         ),
       ),
-      // home: LandingPage(),
+      home: HomeScreen(),
     );
   }
 }
