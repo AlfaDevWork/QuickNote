@@ -14,7 +14,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "com.quicknote"
+    namespace = "com.alfadevwork.quicknote"
     compileSdk = flutter.compileSdkVersion
 
     // Ganti NDK versi lebih aman (opsional)
@@ -30,7 +30,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.quicknote"
+        applicationId = "com.alfadevwork.quicknote"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode

@@ -1,4 +1,4 @@
-package com.quicknote
+package com.alfadevwork.quicknote
 
 import io.flutter.embedding.android.FlutterActivity
 
