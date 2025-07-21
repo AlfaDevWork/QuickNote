@@ -1,6 +1,6 @@
-import 'package:Notes/model/notes_model.dart';
-import 'package:Notes/model/user_model.dart';
 import 'package:path/path.dart';
+import 'package:quicknote/model/notes_model.dart';
+import 'package:quicknote/model/user_model.dart';
 import 'package:sqflite/sqflite.dart';
 
 class DbHelper {

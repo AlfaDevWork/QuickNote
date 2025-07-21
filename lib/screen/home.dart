@@ -1,8 +1,10 @@
-import 'package:Notes/database/db_helper.dart';
-import 'package:Notes/model/notes_model.dart';
-import 'package:Notes/screen/info_aplikasi.dart';
-import 'package:Notes/screen/notes.dart';
+
 import 'package:flutter/material.dart';
+import 'package:quicknote/database/db_helper.dart';
+import 'package:quicknote/model/notes_model.dart';
+import 'package:quicknote/screen/info_aplikasi.dart';
+import 'package:quicknote/screen/notes.dart';
+
 
 class HomeScreen extends StatefulWidget {
   static const String id = "/home_screen";

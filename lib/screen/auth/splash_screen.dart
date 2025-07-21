@@ -1,7 +1,9 @@
-import 'package:Notes/helper/preference.dart';
-import 'package:Notes/screen/auth/landing_screen.dart';
-import 'package:Notes/screen/home.dart';
+
 import 'package:flutter/material.dart';
+import 'package:quicknote/helper/preference.dart';
+import 'package:quicknote/screen/auth/landing_screen.dart';
+import 'package:quicknote/screen/home.dart';
+
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

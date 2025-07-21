@@ -1,7 +1,9 @@
-import 'package:Notes/database/db_helper.dart';
-import 'package:Notes/model/notes_model.dart';
-import 'package:Notes/screen/edit_notes.dart';
+
 import 'package:flutter/material.dart';
+import 'package:quicknote/database/db_helper.dart';
+import 'package:quicknote/model/notes_model.dart';
+import 'package:quicknote/screen/edit_notes.dart';
+
 
 class DetailNotesScreen extends StatefulWidget {
   final Notes notes;

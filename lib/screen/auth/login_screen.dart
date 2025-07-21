@@ -1,9 +1,11 @@
-import 'package:Notes/database/db_helper.dart';
-import 'package:Notes/helper/preference.dart';
-import 'package:Notes/screen/home.dart';
-import 'package:Notes/utils/custom_elevated_button.dart';
-import 'package:Notes/utils/custom_text_field.dart';
+
 import 'package:flutter/material.dart';
+import 'package:quicknote/database/db_helper.dart';
+import 'package:quicknote/helper/preference.dart';
+import 'package:quicknote/screen/home.dart';
+import 'package:quicknote/utils/custom_elevated_button.dart';
+import 'package:quicknote/utils/custom_text_field.dart';
+
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

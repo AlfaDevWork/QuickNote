@@ -1,7 +1,8 @@
-import 'package:Notes/screen/auth/login_screen.dart';
-import 'package:Notes/screen/auth/register_screen.dart';
-import 'package:Notes/utils/custom_elevated_button.dart';
+
 import 'package:flutter/material.dart';
+import 'package:quicknote/screen/auth/login_screen.dart';
+import 'package:quicknote/screen/auth/register_screen.dart';
+import 'package:quicknote/utils/custom_elevated_button.dart';
 
 class LandingScreen extends StatefulWidget {
   static const String id = "/landing_page";

@@ -1,8 +1,10 @@
-import 'package:Notes/database/db_helper.dart';
-import 'package:Notes/model/user_model.dart';
-import 'package:Notes/utils/custom_elevated_button.dart';
-import 'package:Notes/utils/custom_form_text_field.dart';
+
 import 'package:flutter/material.dart';
+import 'package:quicknote/database/db_helper.dart';
+import 'package:quicknote/model/user_model.dart';
+import 'package:quicknote/utils/custom_elevated_button.dart';
+import 'package:quicknote/utils/custom_form_text_field.dart';
+
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -31,7 +33,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CustomFormTextField(
-                  
                   keyboardType: TextInputType.emailAddress,
                   controller: emailController,
                   label: 'Email',

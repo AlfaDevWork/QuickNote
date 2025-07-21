@@ -1,8 +1,10 @@
-import 'package:Notes/database/db_helper.dart';
-import 'package:Notes/model/notes_model.dart';
-import 'package:Notes/utils/custom_elevated_button.dart';
-import 'package:Notes/utils/custom_text_field.dart';
+
 import 'package:flutter/material.dart';
+import 'package:quicknote/database/db_helper.dart';
+import 'package:quicknote/model/notes_model.dart';
+import 'package:quicknote/utils/custom_elevated_button.dart';
+import 'package:quicknote/utils/custom_text_field.dart';
+
 
 class EditNotesScreen extends StatefulWidget {
   final Notes notes;
@@ -61,7 +63,7 @@ class _EditNotesScreenState extends State<EditNotesScreen> {
                   ? "You must fill out this field."
                   : null,
             ),
-            CustomElevatedButton(
+            CustomElevatedButton  (
               text: 'Update',
               onPressed: () {
                 if (_formKey.currentState!.validate()) update();

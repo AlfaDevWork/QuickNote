@@ -1,9 +1,11 @@
-import 'package:Notes/database/db_helper.dart';
-import 'package:Notes/model/notes_model.dart';
-import 'package:Notes/utils/custom_elevated_button.dart';
-import 'package:Notes/utils/custom_text_field.dart';
+
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:quicknote/database/db_helper.dart';
+import 'package:quicknote/model/notes_model.dart';
+import 'package:quicknote/utils/custom_elevated_button.dart';
+import 'package:quicknote/utils/custom_text_field.dart';
+
 
 class AddNotesScreen extends StatefulWidget {
   const AddNotesScreen({super.key});
