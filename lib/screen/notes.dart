@@ -1,10 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:quicknote/database/db_helper.dart';
 import 'package:quicknote/model/notes_model.dart';
 import 'package:quicknote/screen/add_notes.dart';
 import 'package:quicknote/screen/detail_notes.dart';
-
 
 class NotesScreen extends StatefulWidget {
   static const String id = "/notes_screen";
@@ -34,12 +32,13 @@ class _NotesScreenState extends State<NotesScreen> {
   }
 
   void cariNotes(String query) {
-    final hasil = semuaNotes.where((note) {
-      final judul = note.nama.toLowerCase();
-      final isi = note.isi.toLowerCase();
-      final input = query.toLowerCase();
-      return judul.contains(input) || isi.contains(input);
-    }).toList();
+    final hasil =
+        semuaNotes.where((note) {
+          final judul = note.nama.toLowerCase();
+          final isi = note.isi.toLowerCase();
+          final input = query.toLowerCase();
+          return judul.contains(input) || isi.contains(input);
+        }).toList();
 
     setState(() {
       daftarNotes = hasil;
@@ -70,15 +69,16 @@ class _NotesScreenState extends State<NotesScreen> {
                   fillColor: Color(0xffE5E5E5),
                   hintText: 'Search your notes',
                   prefixIcon: Icon(Icons.search),
-                  suffixIcon: _controller.text.isNotEmpty
-                      ? IconButton(
-                          icon: Icon(Icons.clear),
-                          onPressed: () {
-                            _controller.clear();
-                            cariNotes('');
-                          },
-                        )
-                      : null,
+                  suffixIcon:
+                      _controller.text.isNotEmpty
+                          ? IconButton(
+                            icon: Icon(Icons.clear),
+                            onPressed: () {
+                              _controller.clear();
+                              cariNotes('');
+                            },
+                          )
+                          : null,
                   focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Color(0xffE5E5E5)),
                     borderRadius: BorderRadius.circular(12),
@@ -131,9 +131,9 @@ class _NotesScreenState extends State<NotesScreen> {
                           if (hasil == true) muatData();
                         },
                         title: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            SizedBox(
-                              width: 230,
+                            Expanded(
                               child: Text(
                                 notes.nama,
                                 maxLines: 1,
@@ -144,7 +144,6 @@ class _NotesScreenState extends State<NotesScreen> {
                                 ),
                               ),
                             ),
-                            Spacer(),
                             Text(
                               '${notes.tanggal}',
                               style: const TextStyle(
